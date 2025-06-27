@@ -1,4 +1,4 @@
--- Print full description of the books table
+-- Print full description of the Books table from alx_book_store
 SELECT 
     COLUMN_NAME, 
     COLUMN_TYPE, 
@@ -9,5 +9,5 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS 
 WHERE 
-    TABLE_SCHEMA = DATABASE() 
-    AND TABLE_NAME = 'books';
+    TABLE_SCHEMA = 'alx_book_store' 
+    AND TABLE_NAME = 'Books';
